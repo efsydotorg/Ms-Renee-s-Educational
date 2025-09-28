@@ -64,6 +64,14 @@
     .close:hover {
       color: #000;
     }
+    .qr-code {
+      width: 200px;
+      height: auto;
+      margin: 1em auto;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -87,9 +95,11 @@
       <span class="close" onclick="closeModal()">&times;</span>
       <h2>Donate via Square or Venmo</h2>
       <p>Your support helps us deliver mobile-first instruction and build tools for underserved youth.</p>
-      
-      <!-- Venmo QR code image -->
-      <img src="https://live.staticflickr.com/65535/2rvXyFS.jpg" alt="Venmo QR Code" style="width:200px; height:auto; margin: 1em 0; border: 2px solid #ccc; border-radius: 8px;" />
+
+      <!-- Venmo QR code image (direct Flickr link) -->
+      <a href="https://venmo.com/u/msreneeeducation" target="_blank">
+        <img src="https://live.staticflickr.com/65535/2rvXyFS.jpg" alt="Venmo QR Code" class="qr-code" />
+      </a>
       
       <a href="https://square.link/u/aiIJwbaG?src=sheet" target="_blank" class="button">Open Square Donation Page</a>
     </div>
@@ -126,10 +136,3 @@
 
 </body>
 </html>
-
-
-⸻
-
-This is ready to paste into GitHub, and the modal will now show your Venmo QR code, plus the fixed TikTok and Venmo links.
-
-Do you want me to also center the QR code more nicely on mobile screens?
